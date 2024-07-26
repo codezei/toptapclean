@@ -1,0 +1,212 @@
+.promo {
+    &__row {
+        --bs-gutter-y: 0;
+    }
+    &-info {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $third;
+        padding: 1rem;
+        &__title {
+            text-transform: uppercase;
+        }
+        &__logo {
+            max-width: 200px;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        
+    }
+    // @media screen and (min-width: 320px) {
+
+    //     &__title {
+    //         font-size: 30px;
+    //         text-align: center;
+    //         margin-bottom: 10px;
+    //         line-height: 1;
+    //     }
+    //     &__inner {
+    //         height: 200px;
+    //     }
+    //     &__subtitle {
+    //         text-align: center;
+    //         margin-bottom: 15px;
+    //     }
+    // }
+    // @media screen and (min-width: 480px) {
+    //     &__title {
+    //         font-size: 32px;
+    //     }
+    // }
+    // @media screen and (min-width: 640px) {
+    //     &__title {
+    //         font-size: 36px;
+    //     }
+    // }
+    // @media screen and (min-width: 768px) {
+    //     &__title {
+    //         font-size: 40px;
+    //     }
+    //     &__container-fluid {
+    //         flex-direction: row;
+    //     }
+    //     &__inner {
+    //         height: 100%;
+    //     }
+    // }
+    // @media screen and (min-width: 1024px) {
+    //     &__title {
+    //         font-size: 45px;
+    //     }
+
+    // }
+    // @media screen and (min-width: 1220px) {
+    //     &__title {
+    //         font-size: 60px;
+    //     }
+    // }
+
+}
+
+.clean-process {
+
+
+    @media screen and (min-width: 320px) {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        &__cleaner {
+            position: absolute;
+            right: 30%;
+            top: 50%;
+            transform: translate(0, -50%);
+            height: 50%;
+            pointer-events: none;
+            z-index: 3;
+            .animate & {
+                animation-name: moveCleaner;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                animation-direction: alternate;
+                animation-fill-mode: forwards;
+            }
+            
+        }
+        &__clean {
+            position: absolute;
+            left: 70%;
+            top: 50%;
+            transform: translate(0, -50%);
+            height: 40%;
+            width: 100%;
+            z-index: 1;
+            background: rgba($color: #fff, $alpha: 0.1);
+            pointer-events: none;
+            .animate & {
+                animation-name: moveClean;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                animation-direction: alternate;
+                animation-fill-mode: forwards;
+            }
+            
+    
+        }
+        &__title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) scale(0.5);
+            color: $gold;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            opacity: 0;
+            left: 20%;
+            width: 80%;
+            text-transform: uppercase;
+            padding: 0 10px;
+            .animate & {
+                animation-name: showTitle;
+                animation-duration: 1s;
+                animation-delay: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                animation-direction: alternate;
+                animation-fill-mode: forwards;
+            }
+        }
+
+
+
+        &__bg {
+            width: 100%;
+            object-fit: cover;
+            height: 200px;
+        }
+    }
+
+
+    @media screen and (min-width: 480px) {
+        &__title {
+            font-size: 23px;
+        }
+    }
+    @media screen and (min-width: 640px) {
+        &__title {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__bg {
+            height: 100%;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        &__title {
+            font-size: 30px;
+        }
+    }
+    @media screen and (min-width: 1220px) {
+        &__title {
+            font-size: 40px;
+        }
+    }
+
+
+}
+
+@keyframes moveCleaner {
+    from {
+      right: 30%;
+    } 
+    to {
+        right: 80%;
+    }
+}
+
+@keyframes moveClean {
+    from {
+        left: 70%;
+    } 
+    to {
+        left: 20%;
+    }
+}
+
+@keyframes showTitle {
+    from {
+        transform: translateY(-50%) scale(0.5);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+}

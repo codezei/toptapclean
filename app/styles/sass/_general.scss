@@ -1,0 +1,80 @@
+// GENERAL PROJECT STYLES
+$primary:  #295e6a;
+$secondary: #dfeff0;
+$third: #f6f6f6;
+$fourth: #c2faf1;
+$gold: #ffcc90;
+$darkgold: #dcad76;
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+      scroll-behavior: unset;
+  }
+}
+:root {
+  scroll-behavior: unset;
+}
+body {
+	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 1.3;
+	color: #333;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+}
+img {
+  max-width: 100%;
+}
+.block {
+  padding: 60px 0;
+}
+.row {
+  --bs-gutter-y: 1.5rem
+}
+.p-0 {
+  padding: 0;
+}
+.btn {
+    background: $primary;
+    background-image: linear-gradient(to right, $primary 0%, #0b191c  51%, $primary  100%);
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: $gold;            
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px $secondary;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    text-decoration: none;
+  }
+  .title {
+    border-bottom: 4px solid $gold;
+    text-transform: uppercase;
+    &:not(:has( + .subtitle)) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .subtitle {
+    margin-bottom: 1.5rem;
+  }
+
+  .dark-bg {
+    background: $primary;
+    background-image: linear-gradient(to right, $primary 0%, #0b191c  51%, $primary  100%);
+    color: #fff;
+    .title {
+      color: #fff;
+    }
+  }
