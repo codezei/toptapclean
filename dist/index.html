@@ -1,34 +1,942 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
 <head>
-
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
-
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<title>Top Tap Clean</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="icon" href="./images/dist/favicon.ico" type="image/x-icon">
 	
 	<link rel="stylesheet" href="css/app.min.css">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-	<div style="max-width: 700px; margin: auto">
+<div class="loader-wrap">
+    <span class="loader"></span>
+</div>
+<header class="header wow fadeInUp" data-wow-duration="1s">
+    <div class="container">
+      <div class="header__inner">
+        <picture>
+          <!-- <source srcset="./images/dist/logo.webp" type="image/webp"> -->
+          <img class="header__logo logo" src="./images/dist/logo.png" alt="">
+        </picture>
+        <div class="header__menu">
+          <nav class="menu">
+            <a class="menu__link" href="#services">Usługi</a>
+            <a class="menu__link" href="#price">Cennik</a>
+            <a class="menu__link" href="#process">Proces czyszczenia</a>
+            <a class="menu__link" href="#works">Nasza praca</a>
+            <a class="menu__link" href="#reviews">Opinie</a>
+            <a class="menu__link" href="#contacts">Łączność</a>
+          </nav>
+        </div>
+        <div class="header__contact">
+          <div class="contact"> 
+            <a class="contact__callback" href="tel:+48884412928"> <span class="contact__callback-name">Dmitrij</span><span class="contact__callback-number">+48 884 412 928</span></a>
+            <nav class="contact__nav">
+              <a class="contact__nav-item" href="https://www.facebook.com/profile.php?id=61558390682562" target="_blank" aria-label="facebook"> <svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                </svg></a>
+                <!-- <a class="contact__nav-item" href="https://g.co/kgs/vs8CZY" target="_blank" aria-label="google"> <svg class="bi bi-google" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"></path>
+                </svg></a> -->
+                <a class="contact__nav-item" href="https://www.tiktok.com/@toptapclean?_t=8lieXgIxd56&_r=1" target="_blank" aria-label="tiktok"><svg class="bi bi-tiktok" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"></path>
+                </svg></a>
+                <a class="contact__nav-item" href="mailto:top.tap@wp.pl" target="_blank" aria-label="email"><svg class="bi bi-envelope" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+                </svg>
+              </a>
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+              </nav>
+          </div>
+        </div><button class="header__btn btn" type="button" aria-label="open mobile menu"><svg class="bi bi-list" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+          </svg></button>
+        <div class="header-mob">
+          <div class="header-mob__inner">
+            <div class="header-mob__top"><button class="header-mob__close" type="button"><svg class="bi bi-x-lg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                </svg></button>
+              <nav class="menu">
+                 <a class="menu__link" href="#services">Usługi</a>
+                 <a class="menu__link" href="#price">Cennik</a>
+                  <a class="menu__link" href="#process">Proces czyszczenia</a>
+                 <a class="menu__link" href="#works">Nasza praca</a>
+                 <a class="menu__link" href="#reviews">Opinie</a>
+                 <a class="menu__link" href="#contacts">Łączność</a>
+              </nav>
+            </div>
+            <div class="contact"><a class="contact__callback" href="tel:+48884412928"> <span class="contact__callback-name">Dmitrij</span><span class="contact__callback-number">+48884412928</span></a>
+              <nav class="contact__nav">
+                <a class="contact__nav-item" href="https://www.facebook.com/profile.php?id=61558390682562" target="_blank" aria-label="facebook"> 
+                  <svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                  </svg>
+                </a>
+                <!-- <a class="contact__nav-item" href="https://g.co/kgs/vs8CZY" target="_blank" aria-label="google"> <svg class="bi bi-google" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"></path>
+                  </svg>
+                </a> -->
+                <a class="contact__nav-item" href="https://www.tiktok.com/@toptapclean?_t=8lieXgIxd56&_r=1" target="_blank" aria-label="tiktok"><svg class="bi bi-tiktok" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"></path>
+                  </svg>
+                </a>
+                <a class="contact__nav-item" href="top.tap@wp.pl" target="_blank" aria-label="email"><svg class="bi bi-envelope" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+                  </svg>
+                </a>
 
-	</div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<section class="promo">
+    <div class="container-fluid">
+      <div class="row promo__row">
+        <div class="col-md-6 p-0">
+          <div class="clean-process">
+            <picture>
+              <!-- <source srcset="./images/dist/carpet-mob.webp" type="image/webp" media="(max-width: 479px)">
+              <source srcset="./images/dist/carpet-mob.jpg" media="(max-width: 479px)">
+              <source srcset="./images/dist/carpet-tablet.webp" type="image/webp" media="(max-width: 767px)">
+              <source srcset="./images/dist/carpet-tablet.jpg" media="(max-width: 767px)">
+              <source srcset="./images/dist/carpet.webp" type="image/webp"> -->
+              <img class="clean-process__bg" src="./images/dist/carpet.jpg" alt=""></picture>
+            <picture>
+              <!-- <source srcset="./images/dist/cleaner-mob.webp" type="image/webp" media="(max-width: 479px)">
+              <source srcset="./images/dist/cleaner-mob.png" media="(max-width: 479px)">
+              <source srcset="./images/dist/cleaner.webp" type="image/webp"> -->
+              <img class="clean-process__cleaner" src="./images/dist/cleaner.png" alt=""></picture>
+            <div class="clean-process__clean"></div>
+            <h2 class="clean-process__title">ATRAKCYJNE CENY!<br>PROFESJONALNA OBSŁUGA!</h2>
+          </div>
+        </div>
+        <div class="col-md-6 p-0">
+            <div class="promo-info">
+              <img src="./images/dist/logo-full.png" alt="" class="promo-info__logo">
+              <!-- <h1 class="promo-info__title">TopTapClean</h1> -->
+              <p class="promo-info__subtitle">Mamy przyjemność zaoferować Państwu profesjonalne usługi czyszczenia tapicerki meblowej (narożniki, sofy, fotele, krzesła, materace, podnóżki, poduchy), dywaników i foteli samochodowych.</p>
+              <a href="tel:+48884412928" class="btn promo-info__btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Zamów pranie tapicerki</a>
+            </div>
+        </div>
+      </div>
 
+    </div>
+  </section>
+<section class="services block" id="services">
+    <div class="container">
+      <h2 class="title" data-aos-duration="1000" data-aos="fade-right">Usługi</h2>
+      <p class="subtitle">Usługi wykonujemy w domu lub mieszkaniu klienta.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="service" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service__media">
+              <video src="./images/dist/service-clean-carpet.mp4" autoplay muted playsinline loop loading="lazy"></video>
+            </div>
+            <div class="service__description">
+              <h4>Czyszczenie dywanów
+              </h4>
+              <p>Usługę pranie czyszczenie dywanów/wykładzin wykonujemy u klienta. Po praniu jest opcja suszenia za pomocą profesjonalnego sprzętu
+
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service" data-aos="zoom-in" data-aos-delay="800">
+            <div class="service__media">
+              <video src="./images/dist/service-clean-furniture.mp4" autoplay muted playsinline loop loading="lazy"></video>
+            </div>
+            <div class="service__description">
+                <h4>Czyszczenie mebli tapicerowanych oraz skórzanych
+                </h4>
+                <p>Skuteczne usuwanie plam i zabrudzeń wszelkiego rodzaju za pomocą profesjonalnej chemii oraz sprzętu
+
+                </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service" data-aos="zoom-in" data-aos-delay="1200">
+            <div class="service__media">
+              <video src="./images/dist/service-clean-car.mp4" autoplay muted playsinline loop loading="lazy"></video>
+            </div>
+            <div class="service__description">
+                <h4>Czyszczenie wnętrza samochodu
+
+                </h4>
+                <p>Pranie czyszczenie: foteli, bagażnik, dywaniki, inne elementy. Czyszczenie skórzanych foteli oraz impregnacja
+
+                </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service" data-aos="zoom-in" data-aos-delay="1600">
+            <div class="service__media">
+              <video src="./images/dist/service-clean-window.mp4" autoplay muted playsinline loop loading="lazy"></video>
+            </div>
+            <div class="service__description">
+              <h4>Mycie okien
+              </h4>
+              <p>Oferujemy mycie okien w domu i mieszkaniu za pomocą profesjonalnego sprzętu firmy Unger
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section class="price block dark-bg" id="price">
+    <div class="container">
+        <h2 class="price__title title"  data-aos-duration="1000" data-aos="fade-right">Cennik</h2>
+        <div class="price-table" data-aos="zoom-in"  data-aos-delay="1000">
+            <div class="price-table__title">Pranie tapicerki meblowej:</div>
+            <div class="price-table__row row">
+                <!-- <div class="col-12">
+                    
+                </div> -->
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Krzesło (siedzisko)
+                        </div>
+                        <div class="price-item__value">
+                            10zł - z oparciem 15zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Pufa
+                        </div>
+                        <div class="price-item__value">
+                            20-30zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Fotel
+                        </div>
+                        <div class="price-item__value">
+                            30-60zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Wersalka
+                        </div>
+                        <div class="price-item__value">
+                            100-120zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Kanapa 3-4os
+                        </div>
+                        <div class="price-item__value">
+                            120-140zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Narożnik w kształcie litery L
+                        </div>
+                        <div class="price-item__value">
+                            160-200zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Narożnik w kształcie litery U
+                        </div>
+                        <div class="price-item__value">
+                            200-280zł
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-table__title">Materacy:</div>
+            <div class="price-table__row row">
+                <!-- <div class="col-12">
+                    
+                </div> -->
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Materac 1 os
+                        </div>
+                        <div class="price-item__value">
+                            od 100zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Materac 2 os.
+                        </div>
+                        <div class="price-item__value">
+                            od 150zł
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-table__title">Neutralizacja nieprzyjemnych zapachów - do dużej kanapy, materaca gratis
+                (mocz zwierząt, wymiociny..)</div>
+            <div class="price-table__row row">
+                <!-- <div class="col-12">
+                    
+                </div> -->
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Dywan
+                        </div>
+                        <div class="price-item__value">
+                            od 10zł/m2
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Dywan długie włosie
+                        </div>
+                        <div class="price-item__value">
+                            cena ustalana indywidualnie
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Wykładziny
+                        </div>
+                        <div class="price-item__value">
+                            10-25zł/m2
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-table__title">Czyszczenie w samochodzie.</div>
+            <div class="price-table__row row">
+                <!-- <div class="col-12">
+                    
+                </div> -->
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Pranie podstawowe tapicerki (przednie fotele)
+                        </div>
+                        <div class="price-item__value">
+                            100 zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Pranie zaawansowane (fotele, kanapa)
+                        </div>
+                        <div class="price-item__value">
+                            200 zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Pranie expert (fotele, kanapa, boczki, wykładzina, podsufitka, bagażnik)
+                        </div>
+                        <div class="price-item__value">
+                            od 400 do 1000 zł
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Polerowanie reflektorów od
+                        </div>
+                        <div class="price-item__value">
+                            150 zł 
+                        </div>
+                    </div>
+                </div>
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Oklejanie zabiezpieczenie folia PPF
+                        </div>
+                        <div class="price-item__value">
+                            ?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-table__title">mycie okien</div>
+            <div class="price-table__row row">
+                <!-- <div class="col-12">
+                    
+                </div> -->
+                <div class="price-table__col col-sm-6 col-md-4 col-lg-3">
+                    <div class="price-item">
+                        <div class="price-item__name">
+                            Mycie okien
+                        </div>
+                        <div class="price-item__value">
+                            10 zł m
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="price__footnote">
+            Działamy na terenie Nysy i okolic (+100 km)
+            <br>
+            Dojazd na terenie powiatu GRATIS dla zamówień od 200zł!
+            <br>
+            Realizujemy zlecenia jednorazowe lub stałe.
+        </p>
+    </div>
+
+</section>
+<section class="process block" id="process">
+    <div class="container">
+        <h2 class="title process__title"  data-aos-duration="1000" data-aos="fade-right">Proces czyszczenia</h2>
+        <p class="subtitle">Stosowana przez nas technika czyszczenia to metoda ekstrakcyjna - na mokro. Jest to czyszczenie najskuteczniejsze.</p>
+        <div class="row align-items-end">
+            <div class="col-lg-6">
+                <div class="process__list">
+                    <div class="process__item"> Próba materiału i
+                        dobór odpowiedniej chemii (Chemspec, Global, Kiehl)</div>
+                    <div class="process__item"> Dokładne
+                        odkurzanie powierzchni (Karcher, Unger)</div>
+                    <div class="process__item"> Punktowe
+                        odplamianie </div>
+                    <div class="process__item"> Nałożenie
+                        pre-sprayu</div>
+                    <div class="process__item"> Kilkukrotne
+                        dogłębne płukanie</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="process__visual process-visual" data-aos-duration="1000" data-aos="zoom-in" data-aos-delay="1000"> 
+                    <picture>
+                        <source srcset="./images/dist/process-img-mob.webp" type="image/webp" media="(max-width: 479px)">
+                        <source srcset="./images/dist/process-img-mob.png" media="(max-width: 479px)">
+                        <source srcset="./images/dist/process-img-tablet.webp" type="image/webp" media="(max-width: 767px)">
+                        <source srcset="./images/dist/process-img-tablet.png" media="(max-width: 767px)">
+                        <source srcset="./images/dist/process-img.webp" type="image/webp"><img class="process-visual__img"
+                            src="./images/dist/process-img.png" alt="">
+                    </picture>
+                    <div class="process-visual__list">
+                        <div class="process-visual__item">
+                            <div class="process-visual__item-text">Próba materiału i dobór odpowiedniej chemii </div>
+                        </div>
+                        <div class="process-visual__item">
+                            <div class="process-visual__item-text">Dokładne odkurzanie powierzchni</div>
+                        </div>
+                        <div class="process-visual__item">
+                            <div class="process-visual__item-text">Punktowe odplamianie </div>
+                        </div>
+                        <div class="process-visual__item">
+                            <div class="process-visual__item-text">Nałożenie pre-sprayu</div>
+                        </div>
+                        <div class="process-visual__item">
+                            <div class="process-visual__item-text">Kilkukrotne dogłębne płukanie</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <p class="process__footnote">Do czyszczenia wykorzystujemy urządzenia głównie firmy Karcher oraz odpowiednie markowe środki chemiczne, które skutecznie usuwają brud a jednocześnie są delikatne dla czyszczonych powierzchni oraz bezpieczne dla ludzi i zwierząt.</p>
+    </div>
+</section>
+<section class="works block dark-bg" id="works">
+    <div class="container">
+        <h2 data-aos-duration="1000" data-aos="fade-right">NASZA PRACA</h2>
+
+        <div class="swiper works-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-3.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-4.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-5.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-6.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-7.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-8.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work">
+                    <img src="./images/dist/work-img-9.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next works__button works__button--next"></div>
+            <div class="swiper-button-prev works__button works__button--prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+</section>
+<section class="reviews block" id="reviews">
+    <div class="container">
+        <h2  data-aos-duration="1000" data-aos="fade-right">Opinie</h2>
+        <div class="swiper reviews-swiper">
+            <div class="reviews__navigation">
+                <div class="swiper-button-next reviews__button reviews__button--next"></div>
+                <div class="swiper-button-prev reviews__button reviews__button--prev"></div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__ava">M</div>
+                            <div>
+                                <div class="review__name">Marek Pula</div>
+                                <div class="review__rating rating"> <svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="review__text">Usługa wykonana profesjonalnie, szybko i sprawnie. Właściciel bardzo miły i przyjemny. Jestem bardzo zadowolony i polecam tą firmę innym.
+                            Marek</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__ava">К</div>
+                            <div>
+                                <div class="review__name">Krystyna Antczak</div>
+                                <div class="review__rating rating"> <svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="review__text">Jestem bardzo zadowolona z usługi tej firmy ,wszystko zostało do czyszczone perfekcyjnie,szybko i niedrogo.Polecam👍</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__ava">L</div>
+                            <div>
+                                <div class="review__name">Liudmyla Romanchuk</div>
+                                <div class="review__rating rating"> <svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="review__text">Chciałabym wyrazić moje pełne zadowolenie z usług firmy Top Tam Clean. Skorzystałam z ich oferty czyszczenia dywanów, foteli i kanap, i jestem niezwykle zadowolona z efektów ich pracy.
+                            Profesjonalizm, z jakim podeszli do zadania, był imponujący. Przyjechali punktualnie (i to bardzo cenię), wyposażona w nowoczesny sprzęt, który zapewnił dokładne i skuteczne czyszczenie. Wszystkie plamy i zabrudzenia, które wydawały się niemożliwe do usunięcia, zniknęły, a moje meble i dywany wyglądają teraz jak nowe.
+                            Komunikacja z firmą była również na najwyższym poziomie – otrzymałam wyczerpujące informacje na temat oferowanych usług.
+                            Gorąco polecam Top Tap Clean każdemu, kto szuka solidnej, rzetelnej i efektywnej firmy sprzątającej. Na pewno skorzystam z ich usług ponownie w przyszłości!
+                            Dziękuję 🙏</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__ava">F</div>
+                            <div>
+                                <div class="review__name">Filip Bajor</div>
+                                <div class="review__rating rating"> <svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="review__text">Usługa prania narożnika z dosyć trudnym materiałem do takich zabiegów 😁ale cały zabieg wykonany profesjonalnie z dbałością o detale, sprawna i fachowa obsługa 👍👍👍
+                            Bez problemowa kontakt 🤜
+                            Napewno skorzystam ponownie z usług firmy TOP TAP CLEAN 👊</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__ava">J</div>
+                            <div>
+                                <div class="review__name">Jacek Pypeć</div>
+                                <div class="review__rating rating"> <svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="review__text">Profesjonalnie i szybko. Fotele w aucie jak nowe. Polecam wszystkim co własnymi sposobami próbowali czyścić. Takiego efektu nihuja nie da się uzyskać. 👏👏👏</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__ava">G</div>
+                            <div>
+                                <div class="review__name">Gabi Pk</div>
+                                <div class="review__rating rating"> <svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg><svg class="rating__star" width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="review__text">Jestem bardzo zadowolona z usług firmy. Plamy na kanapie zniknęły a kolor jest odświeżony. Super👍 bardzo dziękuję. Szybko, sprawnie, pełen profesjonalizm. Polecam.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            
+        </div>
+
+
+    </div>
+
+
+
+    <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+        <symbol viewBox="0 0 16 16" id="star" fill="currentColor">
+            <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+            </path>
+        </symbol>
+    </svg>
+</section>
+<section class="contacts block dark-bg" id="contacts">
+    <div class="container">
+        <h2 class="contacts__title title"  data-aos-duration="1000" data-aos="fade-right">Kontakt</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contacts__info">
+                    <div class="contacts__item">
+                        <h4 class="contacts__item-title">Obszary które obsługujemy:</h4>
+                        <p class="contacts__item-text">Nysa, Głuchołazy, Otmuchów</p>
+                    </div>
+                    <div class="contacts__item">
+                        <h4 class="contacts__item-title">Telefon:</h4><a class="contacts__item-link"
+                            href="tel:+48884412928">Dmitrij +48 884 412 928</a>
+                    </div>
+                    <div class="contacts__item">
+                        <h4 class="contacts__item-title">Portale społecznościowe:</h4>
+                        <div class="contact">
+                            <nav class="contact__nav--contacts"><a class="contact__nav-item"
+                                    href="https://www.facebook.com/profile.php?id=61558390682562" target="_blank"> <svg
+                                        class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                        </path>
+                                    </svg></a>
+
+                                    <a class="contact__nav-item" href="https://www.tiktok.com/@toptapclean?_t=8lieXgIxd56&_r=1"
+                                    target="_blank"><svg class="bi bi-tiktok" xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z">
+                                        </path>
+                                    </svg></a><a class="contact__nav-item" href="mailto:top.tap@wp.pl"
+                                    target="_blank"><svg class="bi bi-envelope" xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z">
+                                        </path>
+                                    </svg></a>
+
+                                </nav>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <h4 class="contacts__item-title">Tryb pracy:</h4>
+                        <div class="contact">
+                            Pracujemy 7 dni w tygodniu, w godzinach 6:00-22:00, a jeżeli wymaga tego sytuacja również w nocy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+        </div>
+    </div>
+</section>
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
+
+
+
+<footer class="footer dark-bg">
+    <div class="container">
+        <div class="footer__inner">
+            <picture>
+                <!-- <source srcset="./images/dist/logo.webp" type="image/webp"> -->
+                <img class="logo footer__logo" src="./images/dist/logo.png"
+                    alt="">
+            </picture>
+            <div class="footer__menu">
+                <nav class="menu">
+                     <a class="menu__link" href="#services">Usługi</a>
+                     <a class="menu__link" href="#price">Cennik</a>
+                     <a class="menu__link" href="#process">Proces czyszczenia</a>
+                     <a class="menu__link" href="#works">Nasza praca</a>
+                     <a class="menu__link" href="#reviews">Opinie</a>
+                     <a class="menu__link" href="#contacts">Łączność</a>
+                </nav>
+            </div>
+            <div class="footer__contact">
+                <div class="contact"> <a class="contact__callback" href="tel:+48884412928"> <span
+                            class="contact__callback-name">Dmitrij</span><span class="contact__callback-number">+48 884 412 928</span></a>
+                    <nav class="contact__nav"><a class="contact__nav-item" href="https://www.facebook.com/profile.php?id=61558390682562"
+                            target="_blank" aria-label="facebook"> <svg class="bi bi-facebook"
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                </path>
+                            </svg></a>
+                            <a class="contact__nav-item" href="https://www.tiktok.com/@toptapclean?_t=8lieXgIxd56&_r=1"
+                            target="_blank" aria-label="tiktok"><svg class="bi bi-tiktok"
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z">
+                                </path>
+                            </svg></a><a class="contact__nav-item" href="mailto:top.tap@wp.pl"
+                            target="_blank" aria-label="email"><svg class="bi bi-envelope"
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z">
+                                </path>
+                            </svg></a>
+
+                        </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2024 TOPTAPCLEAN. All rights reserved.
+            <!-- <button
+                class="credits-btn">Image credits</button> -->
+            <!-- <div class="credits">
+                <div class="credits__inner"> <button class="credits__close"> <svg class="bi bi-x-lg"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z">
+                            </path>
+                        </svg></button>
+                    <div class="credist__list">
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/price-mob.webp" type="image/webp" media="(max-width: 479px)">
+                                <source srcset="./images/dist/price-mob.jpg" media="(max-width: 479px)">
+                                <source srcset="./images/dist/price-tablet.webp" type="image/webp" media="(max-width: 767px)">
+                                <source srcset="./images/dist/price-tablet.jpg" media="(max-width: 767px)">
+                                <source srcset="./images/dist/price.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/price.jpg" alt="" loading="lazy">
+                            </picture>
+                            <div class="credits__desc"><a
+                                    href="https://www.freepik.com/free-photo/earnings-laptop-accounting-stock-monitoring_1048462.htm#query=price%20list&amp;position=20&amp;from_view=search&amp;track=sph">Image
+                                    by jannoon028 </a><span>on Freepik</span></div>
+                        </div>
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/works-mob.webp" type="image/webp" media="(max-width: 479px)">
+                                <source srcset="./images/dist/works-mob.jpg" media="(max-width: 479px)">
+                                <source srcset="./images/dist/works-tablet.webp" type="image/webp" media="(max-width: 767px)">
+                                <source srcset="./images/dist/works-tablet.jpg" media="(max-width: 767px)">
+                                <source srcset="./images/dist/works.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/works.jpg" alt="Wynik czyszczenia mebli" loading="lazy">
+                            </picture>
+                            <div class="credits__desc"><a
+                                    href="https://www.freepik.com/free-photo/unrecognizable-cleaner-walking-into-hotel-room-with-tools-detergents_5577534.htm#page=2&amp;position=39&amp;from_view=undefined">Image
+                                    by pressfoto </a><span>on Freepik</span></div>
+                        </div>
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/bg.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/bg.jpg" alt="">
+                            </picture>
+                            <div class="credits__desc"><span>Image by </span><a
+                                    href="https://www.freepik.com/free-vector/hand-painted-watercolor-nature-background_13723081.htm#&amp;position=9&amp;from_view=undefined">Freepik
+                                </a></div>
+                        </div>
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/process-img-mob.webp" type="image/webp" media="(max-width: 479px)">
+                                <source srcset="./images/dist/process-img-mob.png" media="(max-width: 479px)">
+                                <source srcset="./images/dist/process-img-tablet.webp" type="image/webp"
+                                    media="(max-width: 767px)">
+                                <source srcset="./images/dist/process-img-tablet.png" media="(max-width: 767px)">
+                                <source srcset="./images/dist/process-img.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/process-img.png" alt="">
+                            </picture>
+                            <div class="credits__desc"><a
+                                    href="https://www.freepik.com/free-photo/cleaning-cleaning-equipment_1187488.htm#page=2&amp;position=27&amp;from_view=undefined">Image
+                                    by dashu83 </a><span>on Freepik</span></div>
+                        </div>
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/services-4.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/services-4.jpg" alt="">
+                            </picture>
+                            <div class="credits__desc"><span>Image by </span><a
+                                    href="https://www.freepik.com/free-photo/beautiful-car-interior-clean-up-service_21139153.htm#query=Car%20interior%20cleaning&amp;position=2&amp;from_view=search&amp;track=sph">Freepik
+                                </a></div>
+                        </div>
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/custom-bg-2.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/custom-bg-2.png" alt="">
+                            </picture>
+                            <div class="credits__desc"><span>Image by </span><a
+                                    href="https://www.freepik.com/free-photo/hand-with-glove-holding-cleaning-solution-bottle-with-copy-space_10526197.htm">Freepik
+                                </a></div>
+                        </div>
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/custom-bg.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/custom-bg.png" alt="">
+                            </picture>
+                            <div class="credits__desc"><span>Image by </span><a
+                                    href="https://www.freepik.com/free-photo/hand-cleaning-surface-top-view_5878950.htm">Freepik
+                                </a></div>
+                        </div>
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/services-2.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/services-2.jpg" alt="">
+                            </picture>
+                            <div class="credits__desc"><a
+                                    href="https://www.freepik.com/free-photo/pillow-sofa-decoration-interior-living-area_9353540.htm#page=4&amp;query=sofa&amp;position=4&amp;from_view=search&amp;track=sph">Image
+                                    by lifeforstock </a><span>on Freepik</span></div>
+                        </div>
+                        <div class="credits__item">
+                            <picture class="credits__img-wrap">
+                                <source srcset="./images/dist/services-1.webp" type="image/webp"><img class="credits__img"
+                                    src="./images/dist/services-1.jpg" alt="">
+                            </picture>
+                            <div class="credits__desc"><a
+                                    href="https://www.freepik.com/free-photo/girl-cleaning-house-with-vacuum-cleaner_13551937.htm#query=Carpet%20cleaning&amp;position=5&amp;from_view=search&amp;track=sph">Image
+                                    by prostoolehlifeforstock </a><span>on Freepik</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</footer>
 	<script src="js/app.min.js"></script>
 
 </body>
