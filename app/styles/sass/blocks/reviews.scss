@@ -11,13 +11,13 @@
         margin-top: 15px;
         
         a {
-            color: #124e38
+            color: $primary;
         }
         a:hover {
             text-decoration: underline;
         }
         a:visited {
-            color: #053624;
+            color:  $primary;
         }
 
     }

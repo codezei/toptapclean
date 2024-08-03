@@ -1,19 +1,17 @@
-.services {
-    
-
-}
-
 .service {
     display: flex;
     flex-direction: column;
     height: 100%;
     &__media {
         position: relative;
-        height: 300px;
+        height: 400px;
         flex-shrink: 0;
+        background-color: rgba($color: $primary, $alpha: 0.3);
+        
+        overflow: hidden;
         video {
             object-fit: cover;
-            object-position: center;
+            object-position: bottom center;
             position: absolute;
             left: 0;
             top: 0;
@@ -21,6 +19,7 @@
             height: 100%;
             display: block;
             z-index: -1;
+            filter: blur(2px);
         }
     }
     &__description {

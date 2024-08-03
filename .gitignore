@@ -3,4 +3,5 @@
 /**/Thumbs.db
 /**/*.DS_Store
 /**/package-lock.json
+/**/telegram.php
 /**/debug.log

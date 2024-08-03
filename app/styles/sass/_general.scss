@@ -13,17 +13,27 @@ $darkgold: #dcad76;
 :root {
   scroll-behavior: unset;
 }
+// html[lang="pl"] body {
+//   font-family: 'Hellix';
+// }
+// html[lang="uk"] body {
+//   font-family: 'Inter';
+// }
 body {
-	font-family: 'Open Sans';
+  font-family: 'Inter';
 	font-size: 16px;
 	line-height: 1.3;
 	color: #333;
 	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
+  &:has(.header-mob--open, .callback.active) {
+    overflow: hidden;
+  }
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat';
+  // font-family: 'Montserrat';
+  font-weight: 700;
 }
 img {
   max-width: 100%;

@@ -4,16 +4,14 @@
         <div class="col-md-6 p-0">
           <div class="clean-process">
             <picture>
-              <!-- <source srcset="./images/dist/carpet-mob.webp" type="image/webp" media="(max-width: 479px)">
+              <source srcset="./images/dist/carpet-mob.webp" type="image/webp" media="(max-width: 479px)">
               <source srcset="./images/dist/carpet-mob.jpg" media="(max-width: 479px)">
               <source srcset="./images/dist/carpet-tablet.webp" type="image/webp" media="(max-width: 767px)">
               <source srcset="./images/dist/carpet-tablet.jpg" media="(max-width: 767px)">
-              <source srcset="./images/dist/carpet.webp" type="image/webp"> -->
+              <!-- <source srcset="./images/dist/carpet.webp" type="image/webp"> -->
               <img class="clean-process__bg" src="./images/dist/carpet.jpg" alt=""></picture>
             <picture>
-              <!-- <source srcset="./images/dist/cleaner-mob.webp" type="image/webp" media="(max-width: 479px)">
-              <source srcset="./images/dist/cleaner-mob.png" media="(max-width: 479px)">
-              <source srcset="./images/dist/cleaner.webp" type="image/webp"> -->
+              <source srcset="./images/dist/cleaner.webp" type="image/webp">
               <img class="clean-process__cleaner" src="./images/dist/cleaner.png" alt=""></picture>
             <div class="clean-process__clean"></div>
             <h2 class="clean-process__title">ATRAKCYJNE CENY!<br>PROFESJONALNA OBSŁUGA!</h2>
@@ -21,10 +19,14 @@
         </div>
         <div class="col-md-6 p-0">
             <div class="promo-info">
-              <img src="./images/dist/logo-full.png" alt="" class="promo-info__logo">
+              <picture>
+                <source srcset="./images/dist/logo-full.webp" type="image/webp">
+                <img src="./images/dist/logo-full.png" alt="" class="promo-info__logo">
+              </picture>
+              
               <!-- <h1 class="promo-info__title">TopTapClean</h1> -->
               <p class="promo-info__subtitle">Mamy przyjemność zaoferować Państwu profesjonalne usługi czyszczenia tapicerki meblowej (narożniki, sofy, fotele, krzesła, materace, podnóżki, poduchy), dywaników i foteli samochodowych.</p>
-              <a href="tel:+48884412928" class="btn promo-info__btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Zamów pranie tapicerki</a>
+              <button type="button" class="btn promo-info__btn js-open-callback" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Zamów pranie tapicerki</button>
             </div>
         </div>
       </div>

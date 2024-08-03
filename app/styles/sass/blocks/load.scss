@@ -1,11 +1,11 @@
 .loader {
-    width: 70px;
-    height: 70px;
-    background: greenyellow;
+    width: 200px;
+    // height: 70px;
+    // background: greenyellow;
     display: inline-block;
     border-radius: 50%;
     box-sizing: border-box;
-    animation: animloader 1s ease-in infinite;
+    animation: animloader 3s ease-in infinite;
   }
   
   @keyframes animloader {
@@ -29,5 +29,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    bottom: 0;
+    // background: #fff;
 }
